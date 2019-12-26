@@ -1,0 +1,40 @@
+#!/bin/bash
+
+file=$1
+
+if [ ! -e $(pwd)/$file ]; then
+    echo "No such file in the directory"
+    exit 1
+fi
+
+home=$HOME"/OS/5"
+trash=$home/.trash
+log=$home/.trash.log
+count=$home/.trash.count
+
+if [ ! -d $trash ]; then
+    mkdir $trash
+fi
+
+if [ ! -e $log ]; then
+    touch $log
+fi
+
+if [ ! -e $count ]; then
+    echo "1" > $count
+fi
+
+read number < $count
+echo $(( $number + 1 )) > $count
+
+ln $file "$trash/$1_$number"
+rm $file
+
+echo "$(pwd)/$file" >> $log
+echo "$1_$number" >> $log
+#echo "$1"
+#echo "$1_$number"
+#echo "$(pwd)/$file:$number" >> $log
+#echo "$(realpath $file) $1_$number"
+
+exit 0

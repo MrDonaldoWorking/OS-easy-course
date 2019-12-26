@@ -1,0 +1,48 @@
+#!/bin/bash
+
+home=$HOME"/OS/5"
+trash=$home/.trash
+log=$home/.trash.log
+
+file=""
+path=""
+saveFile() {
+    if [[ -e $path ]]; then
+        echo "File already exists."
+        exit 0
+	else
+        ln $file $path
+        echo "ln $file $path"
+    fi
+}
+
+while read path; do
+	read name
+	
+	if ! grep -q $1 <<< $name; then
+		continue
+	fi
+
+	file=$trash/$name
+	if [[ -e $file ]]; then
+		echo "$path $name $file"
+		echo "Restore file $path? (y/n)"
+		read answer < /dev/tty
+		if [[ $answer == "y" ]]; then
+			dir=$(dirname $path)
+			echo "dir = "$dir
+			if [[ -d $dir ]]; then
+	            saveFile
+			else
+				echo "$dir has been removed!"
+                echo "Trying to save to $home..."
+
+                path=$home/$(echo $path | cut -d '/' -f $($(echo $path | tr -cd "/" | wc -m)+1))
+	            saveFile
+	            echo "File saved"
+   			fi
+			rm $file
+		fi
+	fi
+done < $log
+

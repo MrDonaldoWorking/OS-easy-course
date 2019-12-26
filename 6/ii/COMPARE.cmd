@@ -1,0 +1,1 @@
+fc C:\OS\6\ii\cd\%1 \\srv-x\cd\%1

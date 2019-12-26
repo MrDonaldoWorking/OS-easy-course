@@ -1,0 +1,30 @@
+#!/bin/bash
+
+home=$HOME"/OS/5/home"
+backupFolders=$(ls $home/*/ | grep -o -E "Backup-[0-9]{4}-[0-9]{2}-[0-9]{2}")
+
+echo "please choose line number"
+lines=$(echo "$backupFolders" | wc -l)
+echo "$backupFolders"
+read answer
+lastBackupFolder="$home/$(echo "$backupFolders" | tail -$($lines-$answer+1))"
+
+if [[ ! -d "$lastBackupFolder" ]]
+then
+  	echo "Any backup folder not found"
+  	exit 1
+fi
+
+restoreFolder="$home/restore/"
+if [[ ! -d "$restoreFolder" ]]
+then
+  	mkdir "$restoreFolder"
+fi
+
+cd "$lastBackupFolder"
+files=$(find . -type f | grep -E -v ".[0-9]{4}-[0-9]{2}-[0-9]{2}")
+echo "$files" | while read f
+do
+  	cp --parents "$f" "$restoreFolder/"
+done
+

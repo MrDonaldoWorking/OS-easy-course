@@ -1,0 +1,104 @@
+
+ACPI         Microsoft ACPI Driver  Kernel        24.03.2005 16:34:09   
+ACPIEC       ACPIEC                 Kernel        24.03.2003 23:16:26   
+AFD          AFD                    Kernel        14.08.2008 2:50:25    
+AsyncMac     RAS Asynchronous Media Kernel        24.03.2003 23:11:27   
+atapi        Standard IDE/ESDI Hard Kernel        24.03.2005 16:28:49   
+Atmarpc      ATM ARP Client Protoco Kernel        24.03.2005 16:27:22   
+audstub      Audio Stub Driver      Kernel        24.03.2003 23:09:12   
+Beep         Beep                   Kernel        24.03.2003 23:03:04   
+cbidf2k      cbidf2k                Kernel        24.03.2003 23:05:00   
+Cdfs         Cdfs                   File System   24.03.2005 16:40:55   
+Cdrom        CD-ROM Driver          Kernel        24.03.2005 16:28:57   
+ClusDisk     Cluster Disk Driver    Kernel        24.03.2005 16:35:52   
+CmBatt       Microsoft ACPI Control Kernel        24.03.2003 23:16:28   
+Compbatt     Microsoft Composite Ba Kernel        24.03.2003 23:16:28   
+crcdisk      CRC Disk Filter Driver Kernel        24.03.2005 16:29:40   
+DfsDriver    DfsDriver              File System   24.03.2005 16:30:28   
+Disk         Disk Driver            Kernel        24.03.2005 16:28:58   
+dmboot       dmboot                 Kernel        24.03.2005 16:30:03   
+dmio         Logical Disk Manager D Kernel        24.03.2005 16:30:02   
+dmload       dmload                 Kernel        24.03.2003 23:08:08   
+E1000        Intel(R) PRO/1000 Devi Kernel        13.01.2003 11:12:12   
+Fastfat      Fastfat                File System   24.03.2005 16:40:20   
+Fdc          Floppy Disk Controller Kernel        24.03.2005 16:28:43   
+Fips         Fips                   Kernel        24.03.2005 16:40:33   
+Flpydisk     Floppy Disk Driver     Kernel        24.03.2003 23:04:32   
+FltMgr       FltMgr                 File System   24.03.2005 16:30:25   
+Ftdisk       Volume Manager Driver  Kernel        24.03.2005 16:29:00   
+Gpc          Generic Packet Classif Kernel        24.03.2005 16:33:31   
+HDAudBus     Microsoft UAA Bus Driv Kernel        18.01.2005 15:00:44   
+HidUsb       Microsoft HID Class Dr Kernel        24.03.2003 23:10:17   
+HTTP         HTTP                   Kernel        24.03.2005 16:40:36   
+i8042prt     i8042 Keyboard and PS/ Kernel        24.03.2005 16:41:05   
+imapi        CD-Burning Filter Driv Kernel        24.03.2005 16:29:10   
+IntelIde     IntelIde               Kernel        24.03.2005 16:28:48   
+intelppm     Intel Processor Driver Kernel        24.03.2005 16:28:40   
+Ip6Fw        IPv6 Windows Firewall  Kernel        24.03.2005 16:30:26   
+IpFilterDriv IP Traffic Filter Driv Kernel        24.03.2005 16:33:57   
+IpNat        IP Network Address Tra Kernel        24.03.2005 16:34:00   
+IPSec        IPSEC driver           Kernel        24.03.2005 16:40:49   
+isapnp       PnP ISA/EISA Bus Drive Kernel        24.03.2003 23:16:35   
+Kbdclass     Keyboard Class Driver  Kernel        24.03.2003 23:03:10   
+KSecDD       KSecDD                 Kernel        24.03.2005 16:28:53   
+mnmdd        mnmdd                  Kernel        24.03.2003 23:07:53   
+Modem        Modem                  Kernel        24.03.2003 23:14:40   
+Mouclass     Mouse Class Driver     Kernel        24.03.2003 23:03:09   
+mouhid       Mouse HID Driver       Kernel        24.03.2003 23:03:12   
+MountMgr     Mount Point Manager    Kernel        24.03.2005 16:27:23   
+MRxDAV       WebDav Client Redirect File System   24.03.2005 16:30:11   
+MRxSmb       MRXSMB                 File System   05.09.2008 5:40:50    
+Msfs         Msfs                   File System   24.03.2005 16:30:04   
+mssmbios     Microsoft System Manag Kernel        24.03.2005 16:34:14   
+Mup          Mup                    File System   24.03.2005 16:40:49   
+NDIS         NDIS System Driver     Kernel        24.03.2005 16:40:26   
+NdisTapi     Remote Access NDIS TAP Kernel        24.03.2005 16:34:11   
+Ndisuio      NDIS Usermode I/O Prot Kernel        24.03.2005 16:33:16   
+NdisWan      Remote Access NDIS WAN Kernel        24.03.2005 16:40:46   
+NDProxy      NDIS Proxy             Kernel        24.03.2005 16:34:13   
+NetBIOS      NetBIOS Interface      File System   24.03.2005 16:33:21   
+NetBT        NetBios over Tcpip     Kernel        24.03.2005 16:40:31   
+Npfs         Npfs                   File System   24.03.2005 16:30:04   
+Ntfs         Ntfs                   File System   24.03.2005 16:40:29   
+Null         Null                   Kernel        24.03.2003 23:03:05   
+Parport      Parallel port driver   Kernel        24.03.2005 16:28:25   
+PartMgr      Partition Manager      Kernel        24.03.2005 16:40:34   
+Parvdm       Parvdm                 Kernel        24.03.2003 23:03:49   
+PCI          PCI Bus Driver         Kernel        24.03.2005 16:34:14   
+Pcmcia       Pcmcia                 Kernel        24.03.2005 16:34:13   
+PCnet        AMD PCNET Compatable A Kernel        05.06.2001 12:54:43   
+PptpMiniport WAN Miniport (PPTP)    Kernel        24.03.2005 16:40:43   
+Processor    Processor Driver       Kernel        24.03.2005 16:28:39   
+Ptilink      Direct Parallel Link D Kernel        24.03.2005 16:28:25   
+RasAcd       Remote Access Auto Con Kernel        24.03.2003 23:11:50   
+Rasl2tp      WAN Miniport (L2TP)    Kernel        24.03.2005 16:40:29   
+RasPppoe     Remote Access PPPOE Dr Kernel        24.03.2005 16:34:16   
+Raspti       Direct Parallel        Kernel        24.03.2005 16:34:16   
+Rdbss        Rdbss                  File System   24.03.2005 16:40:49   
+RDPCDD       RDPCDD                 Kernel        24.03.2003 23:03:05   
+rdpdr        Terminal Server Device Kernel        24.03.2005 16:30:20   
+RDPWD        RDPWD                  Kernel        24.03.2005 16:27:16   
+redbook      Digital CD Audio Playb Kernel        24.03.2005 16:28:46   
+Secdrv       Secdrv                 Kernel        13.09.2006 6:18:32    
+Serial       Serial                 Kernel        24.03.2005 16:28:29   
+Sfloppy      Sfloppy                Kernel        24.03.2003 23:05:20   
+Srv          Srv                    File System   11.12.2008 2:00:38    
+swenum       Software Bus Driver    Kernel        24.03.2005 16:27:42   
+Tcpip        TCP/IP Protocol Driver Kernel        20.06.2008 8:57:40    
+TDPIPE       TDPIPE                 Kernel        24.03.2003 23:02:56   
+TDTCP        TDTCP                  Kernel        24.03.2005 16:27:15   
+TermDD       Terminal Device Driver Kernel        24.03.2005 16:27:15   
+Udfs         Udfs                   File System   24.03.2005 16:30:02   
+Update       Microcode Update Drive Kernel        24.03.2005 16:40:27   
+usbehci      Microsoft USB 2.0 Enha Kernel        24.03.2005 16:30:43   
+usbhub       USB2 Enabled Hub       Kernel        24.03.2005 16:30:46   
+usbohci      Microsoft USB Open Hos Kernel        24.03.2005 16:30:45   
+VBoxGuest    VirtualBox Guest Drive Kernel        10.10.2019 11:46:58   
+VBoxMouse    VirtualBox Guest Mouse Kernel        10.10.2019 11:46:58   
+VBoxSF       VirtualBox Shared Fold File System   10.10.2019 11:46:59   
+VBoxVideo    VBoxVideo              Kernel        10.10.2019 11:46:58   
+vga          vga                    Kernel        24.03.2005 16:29:55   
+VgaSave      VGA Display Controller Kernel        24.03.2005 16:29:54   
+VolSnap      Storage volumes        Kernel        24.03.2005 16:29:10   
+Wanarp       Remote Access IP ARP D Kernel        24.03.2005 16:34:07   
+WLBS         Network Load Balancing Kernel        24.03.2005 16:40:15   
