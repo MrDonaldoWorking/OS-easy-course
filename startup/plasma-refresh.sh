@@ -3,12 +3,12 @@
 if [ $1 -eq 1 ]; then
     sleep 100
 fi
-MAX_MEM=500000
+MAX_MEM=300000 # 300 MiB is upper bound of acceptable memory
 
 while true; do
     MEM=$(grep VmRSS < /proc/`pidof plasmashell`/status | awk '{print $2}')
     if [ $MEM -ge $MAX_MEM ]; then
-        kdialog --msgbox "!!! $(date) plasmashell eats $(numfmt --to=iec-i --suffix=B $MEM) of RAM !!!"
+        kdialog --msgbox "!!! $(date) plasmashell eats $(numfmt --to=iec-i --suffix=B $(($MEM*1000))) of RAM !!!"
         sleep 6
         echo "kquitapp5 plasmashell"
         kquitapp5 plasmashell &
@@ -23,8 +23,8 @@ while true; do
         plasmashell &>/dev/null &
     else
         let next=$(date +%s)+1500
-        echo "$(date): $(numfmt --to=iec-i --suffix=B MEM) bytes"
-        kdialog --msgbox "$(numfmt --to=iec-i --suffix=B $MEM) bytes is acceptable, next check at $(date -d @$next)"
+        echo "$(date): $(numfmt --to=iec-i --suffix=B $(($MEM*1000))) bytes"
+        kdialog --msgbox "$(numfmt --to=iec-i --suffix=B $(($MEM*1000))) bytes is acceptable, next check at $(date -d @$next)"
     fi
     sleep 1500
 done
