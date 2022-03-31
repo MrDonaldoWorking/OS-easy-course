@@ -36,5 +36,3 @@ if [ $1 -eq 1 ]; then
     sleep 170
 fi
 kdialog --msgbox "New grub image is "$(echo "${name##*/}")", previously was "$(echo "${prev_img##*/}")
-
-read
